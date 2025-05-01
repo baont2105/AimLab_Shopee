@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Lab Shopee</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>AIM LAB SHOPEE - BY BAONT</h1>
+        <div class="game-container">
+            <div class="controller">
+                <h3 align="center">Difficulty</h3>
+                <ul class="setting-container">
+                    <li><button class="setting-button" onclick="change_diff(this)" data-speed="1000">
+                            Easy
+                        </button></li>
+                    <li><button class="setting-button" onclick="change_diff(this)" data-speed="750">
+                            Medium
+                        </button></li>
+                    <li><button class="setting-button" onclick="change_diff(this)" data-speed="600">
+                            Hard
+                        </button></li>
+                    <li>
+                        <h3 align="center">Amount of bots</h3>
+                        <input type="number" class="amount" value="30" align="center">
+                    </li>
+                    <li><button class="setting-button" onclick="stop()">
+                            Stop
+                        </button></li>
+                </ul>
+            </div>
+
+            <div class="spawn-area">
+                <div class="box"></div>
+                <div class="button-container">
+                    <button class="start-button" onclick="start()">Start</button>
+                </div>
+            </div>
+
+            <div class="score-board">
+                <h3>Score board</h3>
+                <label id="score-label">0</label>
+
+                <h3>Miss:
+                    <label id="miss-label">0</label>
+                </h3>
+                <h3>Bots left:
+                    <label id="left-label"></label>
+                </h3>
+                <h3>Difficulty:
+                    <label id="diff-label">Easy</label>
+                </h3>
+            </div>
+        </div>
+        <p class="messenge" align="center">- Click the Button To Start -</p>
+        <script src="js/game.js"></script>
+    </div>
+</body>
+
+</html>
